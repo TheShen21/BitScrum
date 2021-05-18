@@ -64,13 +64,13 @@ Features:
 
 -Desktop notifications and sound effects. 
 
--Might do (might be in final product) 
+# Might do (might be in final product) 
 
 -Achievements 
 
 -User accounts with history of previous attempts 
 
--Won't do (scrapped ideas) 
+# Won't do (scrapped ideas) 
 
 -Custom character/pet 
 
