@@ -2,6 +2,7 @@
 
 Project goal:  A speed-typing game where you type lines of code instead of texts. 
 
+
  
 
 Team 
@@ -14,6 +15,7 @@ Team
 
 @ Paul van Breda - Developer 
 
+  
   
 
 # Scope 
@@ -38,6 +40,8 @@ An online leader-board
 
 Desktop notifications and sound effects. 
 
+ 
+ 
  
 
 # Will do (will be in final product) 
@@ -75,6 +79,8 @@ Point rewards and shop
 Report function 
  
 
+
+
 # Milestones 
 
 We will work in 1-week sprints, meaning four sprints per month. After each sprint we will be giving the team lead role over to another member of the team. 
@@ -96,6 +102,7 @@ Week 5: Ironing out any smol mistakes and bugs we find while testing.
 Week 6: Preparing for and giving our final presentation. 
 
  
+
 
 # Communication 
 
