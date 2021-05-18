@@ -7,7 +7,7 @@ Project goal:  A speed-typing game where you type lines of code instead of texts
 
 Team 
 
-@ Bo Shen - Team Lead 
+@ Bo Shen - Developer
 
 @ Pascal De Wit - Developer 
 
