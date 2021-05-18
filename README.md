@@ -22,23 +22,23 @@ Team
 
 Features: 
 
-A typing game that records how fast you type 
+-A typing game that records how fast you type 
 
-A starting screen with a short introduction and customizations 
+-A starting screen with a short introduction and customizations 
 
-A database that holds code for the user to type 
+-A database that holds code for the user to type 
 
-Online multiplayer 
+-Online multiplayer 
 
-Different typing modes (Single/Multi Language, Sudden Death) 
+-Different typing modes (Single/Multi Language, Sudden Death) 
 
-User accounts with history of previous attempts and achievements 
+-User accounts with history of previous attempts and achievements 
 
-Website customizations (font, colour, light/dark mode) 
+-Website customizations (font, colour, light/dark mode) 
 
-An online leader-board 
+-An online leader-board 
 
-Desktop notifications and sound effects. 
+-Desktop notifications and sound effects. 
 
  
  
@@ -46,37 +46,37 @@ Desktop notifications and sound effects.
 
 # Will do (will be in final product) 
 
-A typing game that records how fast you and your opponent type 
+-A typing game that records how fast you and your opponent type 
 
-A starting screen with a short introduction and customizations 
+-A starting screen with a short introduction and customizations 
 
-A database that holds code for the user to type 
+-A database that holds code for the user to type 
 
-Online multiplayer 
+-Online multiplayer 
 
-Different typing modes (Single/Multi Language, Sudden Death) 
+-Different typing modes (Single/Multi Language, Sudden Death) 
 
-User accounts with history of previous attempts 
+-User accounts with history of previous attempts 
 
-Website customizations (font, colour, light/dark mode) 
+-Website customizations (font, colour, light/dark mode) 
 
-An online leader-board 
+-An online leader-board 
 
-Desktop notifications and sound effects. 
+-Desktop notifications and sound effects. 
 
-Might do (might be in final product) 
+-Might do (might be in final product) 
 
-Achievements 
+-Achievements 
 
-User accounts with history of previous attempts 
+-User accounts with history of previous attempts 
 
-Won't do (scrapped ideas) 
+-Won't do (scrapped ideas) 
 
-Custom character/pet 
+-Custom character/pet 
 
-Point rewards and shop 
+-Point rewards and shop 
 
-Report function 
+-Report function 
  
 
 
@@ -106,8 +106,8 @@ Week 6: Preparing for and giving our final presentation.
 
 # Communication 
 
-2 in-person meetings on Tuesday and Friday 
+-2 in-person meetings on Tuesday and Friday 
 
-1 Discord meeting on Thursday @ 12pm  
+-1 Discord meeting on Thursday @ 12pm  
 
-1 meeting with product owner on Friday 
+-1 meeting with product owner on Friday 
