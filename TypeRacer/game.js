@@ -1,4 +1,3 @@
-
 function timer() {
     const startingMinutes = 1;
     let time = startingMinutes * 60;

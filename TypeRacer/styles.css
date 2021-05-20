@@ -2,66 +2,24 @@ body {
     background-color: rgb(34, 32, 32);
 }
 
-header {
+#header {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    padding-bottom: 10%;
-}
-
-h1 {
+    font-size: 4vw;
     color: burlywood;
 }
 
-#account {
+.menu {
     opacity: 0.3; 
-    position: relative;
-    left: 385px;
-    top: 7px;
-    min-width: 30px;
-    width: 30px;
-    max-width: 30px;
+    min-width: 2.5vw;
+    width: 2.5vw;
+    max-width: 2.5vw;
     height: auto;
     transition: transform 0.5s;
 }
 
-#account:hover {
+.menu:hover {
     opacity: 1; 
-    transform: scale(0.8);
-    transition: 0.5s;
-}
-
-#settings {
-    opacity: 0.3;
-    position: relative;
-    left: 30px;
-    top: 6px;
-    min-width: 30px;
-    width: 30px;
-    max-width: 30px;
-    height: auto;
-    transition: transform 0.5s;
-}
-
-#settings:hover {
-    opacity: 1;
-    transform: scale(0.8);
-    transition: 0.5s;
-}
-
-#leaderboard {
-    opacity: 0.3;
-    position: relative;
-    left: 30px;
-    top: 5px;
-    min-width: 30px;
-    width: 30px;
-    max-width: 30px;
-    height: auto;
-    transition: transform 0.5s;
-}
-
-#leaderboard:hover {
-    opacity: 1;
     transform: scale(0.8);
     transition: 0.5s;
 }
@@ -73,7 +31,7 @@ h1 {
     outline: none;
     border: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 175%;
+    font-size: 2vw;
 }
 
 ::placeholder {
@@ -84,5 +42,5 @@ h1 {
     color: burlywood;
     padding-bottom: 0%;
     font-family: 'Raleway', sans-serif;
-    font-size: 500%;
+    font-size: 4vw;
 }
