@@ -8,7 +8,6 @@
     <link rel="icon" href="img/keyboard.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <script src="game.js"></script>
 </head>
 <body>
     <header>
@@ -19,10 +18,11 @@
         </h1>
     </header>
     <section>
-        <div class="timer" align="center">60</div>
+        <p id="timer" align="center"></p>
         <p align="center">
-           <textarea rows="10" cols="75" class="TypingGame" maxlength="680" spellcheck="false" autofocus placeholder="Start typing here..."></textarea>
+           <textarea rows="10" cols="75" class="TypingGame" maxlength="680" spellcheck="false" onkeypress="timer()" autofocus placeholder="Start typing here..."></textarea>
         </p>
     </section>
+    <script src="game.js"></script>
 </body>
 </html>
