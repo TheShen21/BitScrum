@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(20, 19, 19);
+}
+
+header {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10%;
+}
+
+h1 {
+    color: burlywood;
+}
+
+#account {
+    opacity: 0.3; 
+    position: relative;
+    left: 385px;
+    top: 7px;
+    min-width: 30px;
+    width: 30px;
+    max-width: 30px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+#account:hover {
+    opacity: 1; 
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+#settings {
+    opacity: 0.3;
+    position: relative;
+    left: 30px;
+    top: 6px;
+    min-width: 30px;
+    width: 30px;
+    max-width: 30px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+#settings:hover {
+    opacity: 1;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+#leaderboard {
+    opacity: 0.3;
+    position: relative;
+    left: 30px;
+    top: 5px;
+    min-width: 30px;
+    width: 30px;
+    max-width: 30px;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+#leaderboard:hover {
+    opacity: 1;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.TypingGame {
+    color: burlywood;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 175%;
+}
+
+::placeholder {
+    color: burlywood;
+}
+
+.timer {
+    color: burlywood;
+    padding-bottom: 0%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 500%;
+}
