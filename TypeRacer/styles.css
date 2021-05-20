@@ -1,12 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgb(34, 32, 32);
+    margin: 0;
+    padding: 0;
 }
 
 #header {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-size: 4vw;
     color: burlywood;
+}
+
+span#logo {
+    vertical-align: super;
+    font-size: 2vw;
+}
+
+img#logo1 {
+    width: 4vw;
+    height: auto;
 }
 
 .menu {
