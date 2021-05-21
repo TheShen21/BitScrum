@@ -54,9 +54,7 @@ Features:
 
 -A database that holds code for the user to type 
 
--Online multiplayer 
-
--Different typing modes (Single/Multi Language, Sudden Death) 
+-Online multiplayer  
 
 -User accounts with history of previous attempts 
 
@@ -69,6 +67,8 @@ Features:
 # Might do (might be in final product) 
 
 -Achievements 
+
+-Different typing modes (Single/Multi Language, Sudden Death) 
 
 -User accounts with history of previous attempts 
 
