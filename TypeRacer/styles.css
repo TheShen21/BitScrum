@@ -8,38 +8,22 @@ body {
     background-color: rgb(34, 32, 32);
 }
 
+#parent {
+    max-width: 80%;
+    margin: auto;
+}
+
 #header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     color: burlywood;
 }
 
 img#logo {
-    width: 4vw;
+    width: 8vw;
     height: auto;
-}
-
-#icon1 {
-    margin-top: 2.2vw;
-    margin-left: 0.5vw;
-    min-width: 1.5vw;
-    width: 1.5vw;
-    max-width: 1.5vw;
-    height: auto;
-
-}
-
-.menu {
-    width: 100%;
-    opacity: 0.3; 
-    transition: transform 0.5s;
-}
-
-.menu:hover {
-    opacity: 1; 
-    transform: scale(0.8);
-    transition: 0.5s;
 }
 
 .TypingGame {
@@ -58,7 +42,6 @@ img#logo {
 
 #timer {
     color: burlywood;
-    padding-bottom: 0%;
     font-family: 'Raleway', sans-serif;
     font-size: 4vw;
 }

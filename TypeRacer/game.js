@@ -2,7 +2,7 @@ function timer() {
     const startingMinutes = 1;
     let time = startingMinutes * 60;
 
-    const countdownEl = document.getElementById('timer');
+    const countdownTimer = document.getElementById('timer');
 
     var x = setInterval(updateCountDown, 1000);
 
@@ -12,7 +12,7 @@ function timer() {
 
         seconds = seconds < 10 ? '0' + seconds : seconds;
 
-        countdownEl.innerHTML = minutes + ':' + seconds;
+        countdownTimer.innerHTML = minutes + ':' + seconds;
         time--;
 
         if (minutes < 0) {
