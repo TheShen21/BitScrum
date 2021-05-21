@@ -22,12 +22,12 @@ body {
 }
 
 img#logo {
-    width: 8vw;
+    width: 10vw;
     height: auto;
 }
 
 .TypingGame {
-    color: burlywood;
+    color: #deb887;
     background-color: transparent;
     resize: none;
     outline: none;
