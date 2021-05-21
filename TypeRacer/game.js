@@ -17,7 +17,7 @@ function timer() {
 
         if (minutes < 0) {
             clearInterval(x);
-            document.getElementById("timer").innerHTML = "Time is up";
+            document.getElementById('timer').innerHTML = minutes + ':' + seconds;
         }
     }
 }
