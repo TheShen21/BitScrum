@@ -2,9 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Start</title>
+    <title>About</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Raleway', sans-serif;
+            background-color: rgb(255, 255, 255);
+        }
+
+        div#wrapper {
+            background-color: rgb(250, 241, 234);
+        }
+
+        header {
+            background-color: rgb(192, 240, 233);
+            text-align: center;
+        }
+
+        img#logo {
+            width: 320px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            background-color: rgb(128, 128, 128);
+            padding: 10px;
+            padding-left: 20px;
+            border-top: 1px solid white;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        @media all and (min-width: 550px) {
+            ul {
+                background-color: rgb(128, 128, 128);
+            }
+
+            li {
+                display: inline-block;
+                border: none;
+            }
+        }
+
+        h3 {
+            color: rgb(220, 106, 94);
+            font-weight: 600;
+        }
+
+        section, footer {
+            padding: 20px;
+        }
+
+        @media all and (min-width: 550px) {
+            section#nieuws {
+                width: 40%;
+                float: left;
+            }
+
+            section#instrumenten {
+                width: 60%;
+                float: right;
+            }
+        }
+
+        @media all and (min-width: 920px) {
+            section#nieuws {
+                width: 30%;
+                float: left;
+            }
+
+            section#instrumenten {
+                width: 70%;
+                float: right;
+            }
+        }
+
+        article {
+            display: inline-block;
+            width: 45%;
+            margin-right: 20px;
+        }
+
+        article:nth-child(even) {
+            margin-right: 0px;
+        }
+
+        @media all and (min-width: 1200px) {
+            div#wrapper {
+                width: 1200px;
+                margin: auto;
+            }
+        }
+
+        footer {
+            background-color: rgb(128, 128, 128);
+            color: white;
+            clear: both;
+        }
+
+        footer h3 {
+            color: white;
+        }
+    </style>
 </head>
 <body>
+<header>
+    <h1>welcome to our website</h1>
+</header>
+<nav>
+    <!--hoi-->
+    <ul>
+        <li><a href="#drums">Race</a></li>
+        <li><a href="#gitaar">Pit Stop</a></li>
+        <li><a href="#saxofoon">Chat</a></li>
+        <li><a href="#trompet">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<section id="nieuws">
+    <h3>What is Typeracer?</h3>
+    <p> So, you want to know what Typeracer, right? Well, Typeracer is a game that test how fast your typing skills are.
+        However, on our website, we have you write stings of code instead of words and/or phrases. The reasons why are
+        simple. First, we want to stand out from the crowd and not do what the others do. And second, we want to train
+        you into becoming a programmer yourself, because we think that being a software developer is the best occupation
+        for this current generation.
+    </p>
+</section>
+<section id="instrumenten">
+    <article>
+        <h3>Types of code that you'll learn here.</h3>
+
+        <p> As already mentioned, it isn't just our priority to make you a fast typer, but to also make you a good
+            coder. Here are some of the types of code you'll learn as an example. HTML, CSS, Javascript, SQL and PHP.
+            Javascript is all about the
+            interactivity of your website. For example, say you have two photos. You click on Photo one and a smiley
+            appears. However, if yo click right afterwards on photo two, the smiley will "teleport" from photo one photo
+            two.</p>
+    </article>
+    <article>
+        <h3>HTML</h3>
+
+        <p> HTML is the type of code that is used to build websites for example. It allows you to write articles, link
+            to other websites and put up images to make everything more lively.</p>
+    </article>
+    <article>
+        <h3>CSS</h3>
+
+        <p> CSS is the cosmetic part of your websites. It allows you dictate what color you website represents, what
+            type of font is used in the letters
+            that are seen on your website and how big those a for mentioned photos are.</p>
+    </article>
+    <article>
+        <h3>Javascript</h3>
+
+        <p> Javascript is all about the
+            interactivity of your website. For example, say you have two photos. You click on Photo one and a smiley
+            appears. However, if yo click right afterwards on photo two, the smiley will "teleport" from photo one photo
+            two.</p>
+    </article>
+    <h3>SQL</h3>
+
+    <p> SQL is what is used to create databases and store information on it. This allows you, for example, to keep track
+        of how many people have played your game and how many are currently playing, as well as check as to who you have
+        banned from playing.</p>
+    </article>
+    <h3>PHP</h3>
+
+    <p> PHP is the hidden side of your website. On like the other types of code mentioned, PHP cannot be seen by the
+        user if they view the sourcecode of your website. It also prevents "lazy people" from completely copying you and
+        pretanding that they are the ones who did all the hard work.</p>
+    </article>
+</section>
 
 </body>
-</html>
