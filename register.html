@@ -1,0 +1,56 @@
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body></body>
+  <body>
+    <h3>TypeRacer</h3>
+    <div class="wrapper">
+      <h2>Sign Up</h2>
+      <p>Please fill this form to create an account.</p>
+      <form action="method" ="post">
+        <div class="form-group">
+          <label>Username</label>
+          <input
+            type="text"
+            name="username"
+            class="form-control"
+            placeholder="Type username here"
+            
+          />
+          <span class="invalid-feedback"></span>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Type password here"
+          />
+          <span class="invalid-feedback"></span>
+        </div>
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            name="confirm_password"
+            class="form-control"
+             placeholder="Confirm password here"
+          />
+          <span class="invalid-feedback"></span>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary" id="submit" value="Submit" />
+          <input type="reset" class="btn btn-secondary ml-2" value="Reset" />
+        </div>
+        <p>Already have an account? <a href="login.php">Login here</a>.</p>
+      </form>
+    </div>
+  </body>
+</html>
