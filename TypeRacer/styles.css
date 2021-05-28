@@ -36,7 +36,7 @@ img#logo {
     font-size: 2vw;
 }
 
-::placeholder {
+textarea::placeholder {
     color: burlywood;
 }
 
@@ -44,4 +44,10 @@ img#logo {
     color: burlywood;
     font-family: 'Raleway', sans-serif;
     font-size: 4vw;
+}
+
+#charNum {
+    color: burlywood;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
 }
