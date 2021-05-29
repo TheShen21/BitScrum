@@ -1,5 +1,12 @@
-//issue: function can execute multiple times which causes the creation of multiple timers in the same <div>
-//to-do: replace the "if (minutes <0).innerhtml" with a wpm calculation
+function countChar(val) {
+    var len = val.value.length;
+    if (len >= 500) {
+      val.value = val.value.substring(0, 500);
+    } else {
+        document.getElementById('charNum').innerHTML = (0 + len);
+    }
+};
+
 function timer() {
     const startingMinutes = 1;
     let time = startingMinutes * 6;
