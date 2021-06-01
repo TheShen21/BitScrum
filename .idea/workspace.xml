@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90a923b8-44b1-4810-9ec1-2b1a3daf8812" name="Default Changelist" comment="added register page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-    </list>
+    <list default="true" id="90a923b8-44b1-4810-9ec1-2b1a3daf8812" name="Default Changelist" comment="added register page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +50,7 @@
       <updated>1621932555594</updated>
       <workItem from="1621932559065" duration="2289000" />
       <workItem from="1621948645688" duration="557000" />
+      <workItem from="1621950308778" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="added register page">
       <created>1621933847561</created>
