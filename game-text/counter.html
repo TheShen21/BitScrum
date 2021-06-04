@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <hmtl>
-    <body>
+    <body onload="myFunction()">
         <div id="placeholder">ok</div>
         <br>
         <button onclick="myFunction ()">Yes</button>
@@ -17,10 +17,15 @@
 
                 function myFunction (){
                     var random = Math.floor(Math.random() * 6);
-                    document.getElementById("placeholder").innerHTML = (msg[random]);   
+                    document.getElementById("yes").innerHTML = (msg[random]);   
                 }          
 
         </script>
+
+<div id="game">
+    <p align="center"><textarea rows="10" cols="75" class="TypingGame" maxlength="680" spellcheck="false" onkeypress="timer()" (placeholder id="yes") readonly></textarea></p> 
+    <p align="center"><textarea rows="3" cols="75" class="TypingGame" maxlength="680" spellcheck="false" onkeypress="timer()" autofocus  qplaceholder="Start typing here..."></textarea></p>  
+</div>
 
     </body>
 </hmtl>
