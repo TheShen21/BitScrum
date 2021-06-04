@@ -10,8 +10,9 @@ function countChar(val) {
 };
 
 function timer(val) {
+    var runOnce = true;
     const startingMinutes = 1;
-    let time = startingMinutes * 3;
+    let time = startingMinutes * 60;
 
     const countdownTimer = document.getElementById('timer');
 
@@ -29,6 +30,9 @@ function timer(val) {
             clearInterval(x);
             var Chars = val;
             document.getElementById('timer').innerHTML = Chars + " Characters Per Minute!";
+        }
+        if (runOnce = true) {
+            timer = function(){};
         }
     }
 }
