@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<hmtl>
+    <body>
+        <div id="placeholder">ok</div>
+        <br>
+        <button onclick="myFunction ()">Yes</button>
+
+        <script> 
+                var msg = [ //this part needs to be connected to db 
+                    "cool",
+                    "cool cool",
+                    "cool cool cool",
+                    "cool cool cool cool",
+                    "cool cool cool cool cool",
+                    "cool cool cool cool cool cool"
+                ];
+
+                function myFunction (){
+                    var random = Math.floor(Math.random() * 6);
+                    document.getElementById("placeholder").innerHTML = (msg[random]);   
+                }          
+
+        </script>
+
+    </body>
+</hmtl>
