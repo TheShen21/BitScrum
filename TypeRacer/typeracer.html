@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <script src="game.js"></script>
 </head>
-<body>
+<body onload="randomText()">
     <div id="parent">
         <div id="header">
             <a href=""><img id="logo" src="img/logo.svg"></a>
@@ -18,7 +18,7 @@
         <div id="game">
             <p id="timer" align="center"></p>
             <p align="center">
-              <textarea rows="10" cols="75" class="TypingGame" maxlength="680" spellcheck="false" onkeypress="timer()" onkeyup="countChar(this)" autofocus placeholder="Start typing here..."></textarea>
+              <textarea rows="10" cols="75" class="TypingGame" maxlength="680" spellcheck="false" onkeypress="startTimer(); randomText()" onkeyup="countChar(this)" autofocus></textarea>
             </p>  
             <div id="charNum"></div>
         </div>

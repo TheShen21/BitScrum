@@ -1,18 +1,33 @@
-function countChar(val) {
-    var len = val.value.length;
-    if (len >= 500) {
-      val.value = val.value.substring(0, 500);
-    } else {
-        var number = 0 + len;
-        document.getElementById('charNum').innerHTML = number;
-        timer(number);
-    }
+var characters = 0;
+
+var msg = [ //this part needs to be connected to db 
+    "cool",
+    "cool cool",
+    "cool cool cool",
+    "cool cool cool cool",
+    "cool cool cool cool cool",
+    "cool cool cool cool cool cool"
+];  
+
+function randomText (){
+    var random = Math.floor(Math.random() * 6);
+    document.querySelector(".TypingGame").innerHTML = (msg[random]);   
+}   
+
+function countChar(inputText) {
+    characters = inputText.value.length
+    document.getElementById("charNum").innerHTML = characters;
 };
 
-function timer(val) {
-    var runOnce = true;
-    const startingMinutes = 1;
-    let time = startingMinutes * 60;
+var running = false;
+
+function startTimer() {
+    if (running == true) {
+        return
+    }
+    running = true;
+    
+    let time = 5;
 
     const countdownTimer = document.getElementById('timer');
 
@@ -26,13 +41,9 @@ function timer(val) {
         countdownTimer.innerHTML = minutes + ':' + seconds;
         time--;
 
-        if (minutes < 0) {
+        if (time < 0) {
+            document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
             clearInterval(x);
-            var Chars = val;
-            document.getElementById('timer').innerHTML = Chars + " Characters Per Minute!";
-        }
-        if (runOnce = true) {
-            timer = function(){};
         }
     }
 }
