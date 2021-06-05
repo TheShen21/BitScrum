@@ -16,7 +16,7 @@ body {
 
 #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: 'Raleway', sans-serif;
     color: burlywood;
@@ -25,6 +25,12 @@ body {
 img#logo {
     width: 10vw;
     height: auto;
+}
+
+.setTimer {
+    padding-left: 1vw;
+    margin-top: 2.5vw;
+    cursor: pointer;
 }
 
 textarea {

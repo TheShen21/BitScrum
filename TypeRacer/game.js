@@ -28,6 +28,7 @@ function startTimer() {
     const countdownTimer = document.getElementById('timer');
 
     var x = setInterval(updateCountDown, 1000);
+
     function updateCountDown() {
         const minutes = Math.floor(time / 60);
         let seconds = time % 60;
@@ -39,8 +40,8 @@ function startTimer() {
 
         if (time < 0) {
             document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
-            clearInterval(x);
             document.querySelector(".textInput").setAttribute("readonly", "");
+            clearInterval(x);
         }
     }
 }
