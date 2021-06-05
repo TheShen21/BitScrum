@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {
@@ -26,14 +27,14 @@ img#logo {
     height: auto;
 }
 
-.TypingGame {
+textarea {
     color: #deb887;
     background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
     resize: none;
     outline: none;
     border: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2vw;
 }
 
 textarea::placeholder {
@@ -44,10 +45,4 @@ textarea::placeholder {
     color: burlywood;
     font-family: 'Raleway', sans-serif;
     font-size: 4vw;
-}
-
-#charNum {
-    color: burlywood;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2vw;
 }

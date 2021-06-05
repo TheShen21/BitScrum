@@ -1,22 +1,18 @@
 var characters = 0;
 
 var msg = [ //this part needs to be connected to db 
-    "cool",
-    "cool cool",
-    "cool cool cool",
-    "cool cool cool cool",
-    "cool cool cool cool cool",
-    "cool cool cool cool cool cool"
+    "<p>My first paragraph.</p>",
+    "<h1>This is a heading</h1>",
+    "<button>Click me</button>"
 ];  
 
 function randomText (){
-    var random = Math.floor(Math.random() * 6);
-    document.querySelector(".TypingGame").innerHTML = (msg[random]);   
+    var random = Math.floor(Math.random() * 3);
+    document.querySelector(".textPreview").innerHTML = (msg[random]);   
 }   
 
 function countChar(inputText) {
     characters = inputText.value.length
-    document.getElementById("charNum").innerHTML = characters;
 };
 
 var running = false;
@@ -44,6 +40,7 @@ function startTimer() {
         if (time < 0) {
             document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
             clearInterval(x);
+            document.querySelector(".textInput").setAttribute("readonly", "");
         }
     }
 }
