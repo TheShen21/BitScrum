@@ -1,4 +1,5 @@
 var characters = 0;
+var time = 0;
 
 var msg = [ //this part needs to be connected to db 
     "<p>My first paragraph.</p>",
@@ -8,7 +9,7 @@ var msg = [ //this part needs to be connected to db
 
 function randomText (){
     var random = Math.floor(Math.random() * 3);
-    document.querySelector(".textPreview").innerHTML = (msg[random]);   
+    document.getElementById("textPreview").innerHTML = (msg[random]);   
 }   
 
 function countChar(inputText) {
@@ -23,7 +24,7 @@ function startTimer() {
     }
     running = true;
     
-    let time = 5;
+    time = 5;
 
     const countdownTimer = document.getElementById('timer');
 
@@ -40,8 +41,23 @@ function startTimer() {
 
         if (time < 0) {
             document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
-            document.querySelector(".textInput").setAttribute("readonly", "");
+            document.getElementById("textInput").setAttribute("readonly", "");
             clearInterval(x);
         }
     }
+}
+
+function timer15() {
+    time = 15;
+    document.getElementById("textInput").value = "";
+}
+
+function timer30() {
+    time = 30;
+    document.getElementById("textInput").value = "";
+}
+
+function timer60() {
+    time = 60;
+    document.getElementById("textInput").value = "";
 }

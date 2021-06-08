@@ -14,15 +14,15 @@
     <div id="parent">
         <div id="header">
             <a href=""><img id="logo" src="img/logo.svg"></a>
-            <p class="setTimer">15 seconds</p>
-            <p class="setTimer">30 seconds</p>
-            <p class="setTimer">60 seconds</p>
+            <p class="setTimer" onclick="timer15(); randomText()">15 seconds</p>
+            <p class="setTimer" onclick="timer30(); randomText()">30 seconds</p>
+            <p class="setTimer" onclick="timer60(); randomText()">60 seconds</p>
         </div>  
         <div id="game">
             <p id="timer" align="center"></p>
             <p align="center">
-                <textarea rows="5" cols="75" class="textPreview" maxlength="680" spellcheck="false" readonly></textarea>
-                <textarea rows="1" cols="75" class="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this)" autofocus placeholder="Start typing here..."></textarea>
+                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" readonly></textarea>
+                <textarea rows="1" cols="75" id="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this)" autofocus placeholder="Start typing here..."></textarea>
             </p>
         </div>
     </div>
