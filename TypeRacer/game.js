@@ -1,5 +1,4 @@
 var characters = 0;
-var time = 0;
 
 var msg = [ //this part needs to be connected to db 
     "<p>My first paragraph.</p>",
@@ -23,8 +22,8 @@ function startTimer() {
         return
     }
     running = true;
-    
-    time = 5;
+
+    time = 60;
 
     const countdownTimer = document.getElementById('timer');
 
@@ -50,14 +49,20 @@ function startTimer() {
 function timer15() {
     time = 15;
     document.getElementById("textInput").value = "";
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").removeAttribute("readonly", "");
 }
 
 function timer30() {
     time = 30;
     document.getElementById("textInput").value = "";
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").removeAttribute("readonly", "");
 }
 
 function timer60() {
     time = 60;
     document.getElementById("textInput").value = "";
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").removeAttribute("readonly", "");
 }
