@@ -1,5 +1,5 @@
 var characters = 0;
-
+var finalScore = 0;
 var msg = [ //this part needs to be connected to db 
     "<p>My first paragraph.</p>",
     "<h1>This is a heading</h1>",
@@ -23,7 +23,7 @@ function startTimer() {
     }
     running = true;
 
-    time = 60;
+    time = 3;
 
     const countdownTimer = document.getElementById('timer');
 
@@ -42,6 +42,7 @@ function startTimer() {
             document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
             document.getElementById("textInput").setAttribute("readonly", "");
             clearInterval(x);
+            finalScore = characters;
         }
     }
 }
