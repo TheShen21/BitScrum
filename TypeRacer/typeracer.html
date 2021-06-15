@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRacer</title>
+    <link rel="icon" href="img/keyboard.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="game.js"></script>
+</head>
+<body onload="randomText()">
+    <div id="parent">
+        <div id="header">
+            <a href=""><img id="logo" src="img/logo.svg"></a>
+            <p class="setTimer" onclick="timer15(); randomText()">15 seconds</p>
+            <p class="setTimer" onclick="timer30(); randomText()">30 seconds</p>
+            <p class="setTimer" onclick="timer60(); randomText()">60 seconds</p>
+        </div>  
+        <div id="game">
+            <p id="timer" align="center"></p>
+            <p align="center">
+                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" readonly></textarea>
+                <textarea rows="1" cols="75" id="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this)" autofocus placeholder="Start typing here..."></textarea>
+                <div id="finalScore">hey</div>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

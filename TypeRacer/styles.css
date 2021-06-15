@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(34, 32, 32);
+}
+
+#parent {
+    max-width: 80%;
+    margin: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: burlywood;
+}
+
+img#logo {
+    width: 10vw;
+    height: auto;
+}
+
+.setTimer {
+    padding-left: 1vw;
+    margin-top: 2.5vw;
+    cursor: pointer;
+}
+
+#textPreview, #textInput {
+    color: #deb887;
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+#textPreview::placeholder, #textInput::placeholder {
+    color: burlywood;
+}
+
+#timer {
+    color: burlywood;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+}
+
+#finalScore {
+    color: burlywood;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+}
