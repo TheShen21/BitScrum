@@ -11,6 +11,8 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 10px;
+            align-self: center;
         }
 
         body {
@@ -66,7 +68,7 @@
         img {
             width: 100%;
             color: #deb887;
-            align-self: center;
+
         }
 
         ul {
@@ -77,7 +79,7 @@
         li {
             padding: 10px;
             padding-left: 20px;
-            align-self: center;
+
 
         }
 
@@ -96,7 +98,7 @@
             li {
                 display: inline-block;
                 border: none;
-                align-self: center;
+
             }
         }
 
@@ -167,264 +169,84 @@
             height: 50px;
             width: 50px;
             color: #deb887;
-            align-self: center;
+
         }
 
         h1 {
             color: #deb887;
             grid-column: 1/5;
+            font-size: 30px;
         }
 
-        table, border {
-            color: #deb887;
-            align-self: center;
-            text-align: center;
-        }
 
         form {
             display: grid;
             grid-template-columns: 30% 30% 20% 40%;
         }
 
-        h2
+        h2 {
+
+            color: #deb887;
+
+
+        }
+
+        .knop {
+            display: flex;
+            grid-column: 3/5;
+        }
+
+        .login {
+            grid-column: 5/5;
+            display: flex;
+        }
+        .about{
+            display: flex;
+            grid-column: 3/5;
+        }
+        .home{
+            display: flex;
+            grid-column: 2/5;
+        }
 
     </style>
 </head>
 
 <body>
+<form action="formtest.php" method="post">
+    <div class="title">
 <header><a href=""><img id="logo" src="img/logo.svg"></a></header>
-<nav>
-    <table border="0">
-        <tr>
-            <td>
-            <td>
-                <li><a href="index.html"><img src="img/keyboard.svg"></a></li>
-        </td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <li><a href="front-end/about.html"><img src="img/info.png"></a></li>
-            </td>
+    </div>
+
+
+    <ul>
+
+<div class="home">
+        <li><a href="index.html"><img src="img/keyboard.svg"></a></li>
+</div>
+        <div class="about">
+            <li><a href="front-end/about.html"><img src="img/info.png"></a></li>
+        </div>
+
+        <div class="login">
+            <img src="img/user.svg">
+            <a href="Login.php"><p>Login</p></a>
+            <a href="Register.php"><p>Register</p></a>
+        </div>
+    </ul>
 
 
 
 
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-
-                <img src="img/user.svg">
-                <a href="Login.php"><p>Login</p></a>
-                <a href="Register.php"><p>Register</p></a>
-
-                </ul>
-            </td>
-
-        </tr>
-    </table>
-</nav>
-<br>
+<div class="knop">
+    <a href="TypeRacer/typeracer.html">
+        <h2>CLICK HERE TO PLAY THE GAME</h2>
 
 
-<a href="TypeRacer/typeracer.html">
-    <table border="1">
-        <tr>
-            <td><h1>CLICK HERE TO PLAY THE GAME</h1> <br>
-                <H3> WARNING: your score will not be saved if you don't use your account!</H3></td>
-        </tr>
-    </table>
-</a>
-
-<section>
-    <table border="1">
-        <tr>
-            <td rowspan="2"></td>
-            <td colspan="2"></td>
-            <td rowspan="2"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-    <table border="1">
-        <tr>
-            <td colspan="12"></td>
-        </tr>
-        <tr>
-            <td colspan="6"></td>
-            <td colspan="6"></td>
-        </tr>
-        <tr>
-            <td rowspan="3"></td>
-            <td rowspan="3"></td>
-            <td rowspan="3"></td>
-            <td rowspan="3"></td>
-        </tr>
-        <tr>
-            <td colspan="6"></td>
-            <td colspan="6"></td>
-        </tr>
-    </table>
-    <table border="2">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="5"></td>
-            <td colspan="3"></td>
-        </tr>
-        <tr>
-            <td colspan="2"></td>
-            <td rowspan="4"></td>
-        </tr>
-        <tr>
-            <td rowspan="3"></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="2"></td>
-        </tr>
-    </table>
-    <table border="2">
-        <tr>
-            <td rowspan="2"></td>
-            <td rowspan="2"></td>
-            <td colspan="2"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="2"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</section>
+    </a>
+</div>
 
 <script src="game.js"></script>
+</form>
 </body>
 </html>
