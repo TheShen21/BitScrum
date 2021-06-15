@@ -54,8 +54,6 @@ Features:
 
 -A database that holds code for the user to type 
 
--Online multiplayer  
-
 -User accounts with history of previous attempts 
 
 -Website customizations (font, colour, light/dark mode) 
@@ -65,6 +63,8 @@ Features:
 -Desktop notifications and sound effects. 
 
 # Might do (might be in final product) 
+
+-Online multiplayer  
 
 -Achievements 
 
