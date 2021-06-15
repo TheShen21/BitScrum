@@ -4,7 +4,7 @@ var msg = [ //this part needs to be connected to db
     "<p>My first paragraph.</p>",
     "<h1>This is a heading</h1>",
     "<button>Click me</button>"
-];  
+];
 
 function randomText (){
     var random = Math.floor(Math.random() * 3);
