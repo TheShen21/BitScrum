@@ -54,8 +54,6 @@ Features:
 
 -A database that holds code for the user to type 
 
--User accounts with history of previous attempts 
-
 -Website customizations (font, colour, light/dark mode) 
 
 -An online leader-board 
