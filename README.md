@@ -9,6 +9,8 @@ Team
 
 @ Bo Shen - Developer
 
+@ Daan Swart - Developer
+
 @ Pascal De Wit - Developer 
 
 @ That Nguyen - Developer 
