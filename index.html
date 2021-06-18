@@ -56,7 +56,7 @@
         header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            grid-column: 1/5;
             font-family: 'Raleway', sans-serif;
             color: burlywood;
         }
@@ -191,20 +191,17 @@
 
         }
 
-        .knop {
+        .Login {
             display: flex;
-            grid-column: 3/5;
+            grid-column: 4/5;
         }
 
-        .login {
-            grid-column: 5/5;
+        .Register {
             display: flex;
+            grid-column: 4/5;
         }
-        .about{
-            display: flex;
-            grid-column: 3/5;
-        }
-        .home{
+
+        .knop {
             display: flex;
             grid-column: 2/5;
         }
@@ -214,39 +211,24 @@
 
 <body>
 <form action="formtest.php" method="post">
-    <div class="title">
-<header><a href=""><img id="logo" src="img/logo.svg"></a></header>
+    <header><a href=""><img id="logo" src="img/logo.svg"></a></header>
+
+
+    <li><a href="index.html"><img src="img/logo_yellow.png"></a></li>
+
+    <li><a href="front-end/about.html"><img src="img/info_yellow.png"></a></li>
+    <br><br>
+    <img src="img/user_yellow.png">
+    <div class="Login">
+        <a href="Login.php"><p>Login</p></a>
+
     </div>
-
-
-    <ul>
-
-<div class="home">
-        <li><a href="index.html"><img src="img/keyboard.svg"></a></li>
-</div>
-        <div class="about">
-            <li><a href="front-end/about.html"><img src="img/info.png"></a></li>
-        </div>
-
-        <div class="login">
-            <img src="img/user.svg">
-            <a href="Login.php"><p>Login</p></a>
-            <a href="Register.php"><p>Register</p></a>
-        </div>
-    </ul>
-
-
-
-
-<div class="knop">
-    <a href="TypeRacer/typeracer.html">
-        <h2>CLICK HERE TO PLAY THE GAME</h2>
-
-
-    </a>
-</div>
-
-<script src="game.js"></script>
+    <div class="Register">
+        <a href="Register.php"><p>Register</p></a>
+    </div>
+    <div class="knop">
+        <a href="TypeRacer/typeracer.html"><table border="1"><tr><td><h2>CLICK HERE TO PLAY OUR GAME</h2></td></tr></table> </a>
+    </div>
 </form>
 </body>
 </html>
