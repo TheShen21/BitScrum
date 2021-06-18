@@ -1,5 +1,7 @@
 var characters = 0;
 var finalScore = 0;
+var x;
+var test = 0;
 var msg = [ //this part needs to be connected to db 
     "<p>My first paragraph.</p>",
     "<h1>This is a heading</h1>",
@@ -23,11 +25,9 @@ function startTimer() {
     }
     running = true;
 
-    time = 3;
-
     const countdownTimer = document.getElementById('timer');
 
-    var x = setInterval(updateCountDown, 1000);
+    x = setInterval(updateCountDown, 1000);
 
     function updateCountDown() {
         const minutes = Math.floor(time / 60);
@@ -48,22 +48,25 @@ function startTimer() {
 }
 
 function timer15() {
-    time = 15;
+    clearInterval(x);
     document.getElementById("textInput").value = "";
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
+    time = 15;
 }
 
 function timer30() {
-    time = 30;
+    clearInterval(x);
     document.getElementById("textInput").value = "";
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
+    time = 30;
 }
 
 function timer60() {
-    time = 60;
+    clearInterval(x);
     document.getElementById("textInput").value = "";
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
+    time = 60;
 }
