@@ -1,3 +1,24 @@
+function buttonColour() {
+    document.getElementById("button1").addEventListener("click", function() {
+        document.getElementById("button1").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+    document.getElementById("button2").addEventListener("click", function() {
+        document.getElementById("button2").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+    document.getElementById("button3").addEventListener("click", function() {
+        document.getElementById("button3").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+    document.getElementById("button4").addEventListener("click", function() {
+        document.getElementById("button4").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+    document.getElementById("button5").addEventListener("click", function() {
+        document.getElementById("button5").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+    document.getElementById("button6").addEventListener("click", function() {
+        document.getElementById("button6").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+}
+
 function overlayOff() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("textInput").focus();
