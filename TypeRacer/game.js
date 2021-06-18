@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-function timer() {
-    const startingMinutes = 1;
-    let time = startingMinutes * 60;
-=======
 var characters = 0;
 var finalScore = 0;
 var msg = [ //this part needs to be connected to db 
@@ -11,7 +6,7 @@ var msg = [ //this part needs to be connected to db
     "<button>Click me</button>"
 ];
 
-var selected_msg = '';
+var selected_msg ='';
 
 function randomText (){
     var random = Math.floor(Math.random() * 3);
@@ -32,7 +27,6 @@ function startTimer() {
     running = true;
 
     time = 3;
->>>>>>> Stashed changes
 
     const countdownTimer = document.getElementById('timer');
 
@@ -47,9 +41,32 @@ function startTimer() {
         countdownTimer.innerHTML = minutes + ':' + seconds;
         time--;
 
-        if (minutes < 0) {
+        if (time < 0) {
+            document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
+            document.getElementById("textInput").setAttribute("readonly", "");
             clearInterval(x);
-            document.getElementById('timer').innerHTML = minutes + ':' + seconds;
+            finalScore = characters;
         }
     }
+}
+
+function timer15() {
+    time = 15;
+    document.getElementById("textInput").value = "";
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").removeAttribute("readonly", "");
+}
+
+function timer30() {
+    time = 30;
+    document.getElementById("textInput").value = "";
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").removeAttribute("readonly", "");
+}
+
+function timer60() {
+    time = 60;
+    document.getElementById("textInput").value = "";
+    document.getElementById("textInput").focus();
+    document.getElementById("textInput").removeAttribute("readonly", "");
 }
