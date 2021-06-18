@@ -1,8 +1,19 @@
 <?php
 
-require_once "../lib/backend/config.php";
+require_once "../lib/backend/connection.php";
 
-$random = rand(1,2);
+$query_id = "select count(*) from javascript";
+
+$stmt = $link->prepare($query_id);
+
+$stmt->execute();
+$result = $stmt->get_result();
+foreach ($result as $row) {
+    $random = rand(1, $row["count(*)"]);
+}
+
+
+
 
 $query = "select code from javascript where id=?";
 // $result = $link->query($query);
