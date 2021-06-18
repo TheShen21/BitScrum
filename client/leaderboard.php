@@ -1,5 +1,5 @@
 <?php
-require_once "../lib/backend/config.php";
+require_once "../lib/backend/connection.php";
 
 $sql = "SELECT username, cpm FROM users ORDER BY cpm DESC";
 $result = $conn->query($sql);
