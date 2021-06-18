@@ -1,6 +1,6 @@
 <?php
 // Include config file
-require_once "../lib/backend/config.php";
+require_once "../lib/backend/connection.php";
 
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
