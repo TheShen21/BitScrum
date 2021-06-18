@@ -14,7 +14,6 @@ foreach ($result as $row) {
 
 
 
-
 $query = "select code from javascript where id=?";
 // $result = $link->query($query);
 
@@ -26,10 +25,22 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 foreach ($result as $row) {
-    echo $row["code"];
+    $rng = $row["code"];
 }
 
 
 
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random</title>
+</head>
+<body>
+    <div><?php echo "<h2>$rng</h2>";?></div>
+</body>
+</html>
