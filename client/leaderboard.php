@@ -2,7 +2,7 @@
 require_once "../lib/backend/connection.php";
 
 $sql = "SELECT username, cpm FROM users ORDER BY cpm DESC";
-$result = $conn->query($sql);
+$result = $link->query($sql);
 $rank = 1;
 
 
