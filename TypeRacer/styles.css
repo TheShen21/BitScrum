@@ -9,6 +9,38 @@ body {
     background-color: rgb(34, 32, 32);
 }
 
+#overlay {
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 1;
+    z-index: 2; 
+}
+
+#overlayTitle {
+    font-family: 'Raleway', sans-serif;
+    color: burlywood;
+    font-size: 2vw;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#overlayText {
+    font-family: 'Raleway', sans-serif;
+    color: burlywood;
+    font-size: 1.5vw;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 10vw;
+}
+
 #parent {
     max-width: 80%;
     margin: auto;
@@ -27,10 +59,43 @@ img#logo {
     height: auto;
 }
 
-.setTimer {
-    padding-left: 1vw;
-    margin-top: 2.5vw;
+.setLanguage {
+    float: left;
+    position: relative;
+    margin-left: 2%;
+    top: 40%;
+    left: 38%;
+    font-size: 1vw;
+    width: 5.5vw;
+    height: 5.5vw;
+    border: none;
+    outline: none;
+    background-color:azure;
+    font-family: 'Raleway', sans-serif;
+    color: burlywood;
     cursor: pointer;
+}
+
+.setTimer {
+    float: left;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 2%;
+    top: 50%;
+    left: 15.5%;
+    font-size: 1vw;
+    width: 5.5vw;
+    height: 5.5vw;
+    border: none;
+    outline: none;
+    background-color:azure;
+    font-family: 'Raleway', sans-serif;
+    color: burlywood;
+    cursor: pointer;
+}
+
+.setTimer:hover, .setLanguage:hover {
+    background-color: rgb(48, 48, 48);
 }
 
 #textPreview, #textInput {

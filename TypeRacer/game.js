@@ -1,3 +1,13 @@
+function overlayOff() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("textInput").focus();
+}
+
+function overlaySettings() {
+    document.getElementById("textInput").blur();
+    
+}
+
 var characters = 0;
 var finalScore = 0;
 var x;

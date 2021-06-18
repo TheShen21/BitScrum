@@ -10,13 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <script src="game.js"></script>
 </head>
-<body onload="randomText()">
+<body onload="randomText(); overlaySettings();">
+    <div id="overlay" onclick="overlayOff()">
+        <p id="overlayTitle">Welcome to TypeRacer</p>
+        <br>
+        <p id="overlayText">Please select a programming language and time option</p>
+        <button class="setLanguage">HTML</button>
+        <button class="setLanguage">Javascript</button>
+        <button class="setLanguage">CSS</button>
+        <button class="setTimer" onclick="timer15(); randomText()">15 seconds</button>
+        <button class="setTimer" onclick="timer30(); randomText()">30 seconds</button>
+        <button class="setTimer" onclick="timer60(); randomText()">60 seconds</button>
+    </div>
     <div id="parent">
         <div id="header">
             <a href=""><img id="logo" src="img/logo.svg"></a>
-            <p class="setTimer" onclick="timer15(); randomText()">15 seconds</p>
-            <p class="setTimer" onclick="timer30(); randomText()">30 seconds</p>
-            <p class="setTimer" onclick="timer60(); randomText()">60 seconds</p>
         </div>  
         <div id="game">
             <p id="timer" align="center"></p>
