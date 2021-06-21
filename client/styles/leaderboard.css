@@ -1,3 +1,50 @@
 body {
-    background-color: blue;
+    background-color: black;
+    color: white;
+
+}
+
+table#leaderboard {
+    border-collapse: collapse;
+    margin: 25px auto 0 auto;
+    width: 90vw;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.979);
+    font-family: sans-serif;
+}
+
+tr#head {
+    background-color: #dea955;
+    color: black;
+    font-weight: bold;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px 15px;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+
+}
+
+/*Add a lighter background to every second row(in this case the uneven rows) */
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: black;
+}
+
+/*Add border to the last row  */
+tr:last-of-type {
+    border-bottom: 2px solid #dea955;
+}
+
+td#first {
+    background-image: url('../images/crown.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 25px 0px;
+    height: 25px;
+
 }
