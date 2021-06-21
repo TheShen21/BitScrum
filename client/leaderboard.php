@@ -18,11 +18,11 @@ $rank = 1;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
-    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="stylesheet" href="styles/leaderboard.css">
 </head>
 <body>
 <table id="leaderboard">
-    <tr>
+    <tr id = "head">
         <th>Rank</th>
         <th>Username</th>
         <th>Cpm</th>
@@ -31,18 +31,26 @@ $rank = 1;
     <?php
     if (mysqli_num_rows($result)){
         while ($row = mysqli_fetch_assoc($result)){
+            if($rank === 1){
+            echo "<tr id='first_row'>
+                <td id='first'>{$rank}</td>
+                <td>{$row['username']}</td>
+                <td>{$row['cpm']}</td>
+            </tr>";
+            } else {
             echo "<tr>
-              <td>{$rank}</td>
-              <td>{$row['username']}</td>
-              <td>{$row['cpm']}</td>
-              </tr>";
-
+            <td>{$rank}</td>
+            <td>{$row['username']}</td>
+            <td>{$row['cpm']}</td>
+            </tr>";    
+            }
             $rank++;
         }
 
     }
-?>
-
+?> 
+<tr>
+              
 </table>
 
 </body>
