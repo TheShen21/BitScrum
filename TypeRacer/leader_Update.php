@@ -3,11 +3,9 @@ require_once "../lib/backend/connection.php";
 
 session_start();
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php");
     exit;
 }
 elseif(!isset($_POST["score"])){
-    echo "nope";
     exit;
 }
 $user = $_SESSION["username"];
