@@ -43,6 +43,14 @@ function startTimer() {
             document.getElementById("textInput").setAttribute("readonly", "");
             clearInterval(x);
             finalScore = characters;
+
+            var data = new FormData();
+            data.append("score", finalScore);
+
+            fetch("leader_Update.php", {
+                method: "POST",
+                body: data
+            });
         }
     }
 }
