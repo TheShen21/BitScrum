@@ -11,6 +11,8 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 10px;
+            align-self: center;
         }
 
         body {
@@ -54,7 +56,7 @@
         header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            grid-column: 1/5;
             font-family: 'Raleway', sans-serif;
             color: burlywood;
         }
@@ -65,6 +67,8 @@
 
         img {
             width: 100%;
+            color: #deb887;
+
         }
 
         ul {
@@ -76,12 +80,14 @@
             padding: 10px;
             padding-left: 20px;
 
+
         }
 
         li a {
 
             text-decoration: none;
             font-weight: 700;
+            align-self: center;
         }
 
         @media all and (min-width: 550px) {
@@ -92,6 +98,7 @@
             li {
                 display: inline-block;
                 border: none;
+
             }
         }
 
@@ -100,59 +107,6 @@
             font-weight: 600;
         }
 
-        section, footer {
-            padding: 20px;
-        }
-
-        @media all and (min-width: 550px) {
-            section#nieuws {
-                width: 40%;
-                float: left;
-            }
-
-            section#instrumenten {
-                width: 60%;
-                float: right;
-            }
-        }
-
-        @media all and (min-width: 920px) {
-            section#nieuws {
-                width: 30%;
-                float: left;
-            }
-
-            section#instrumenten {
-                width: 70%;
-                float: right;
-            }
-        }
-
-        article {
-            display: inline-block;
-            width: 45%;
-            margin-right: 20px;
-        }
-
-        article:nth-child(even) {
-
-        }
-
-        @media all and (min-width: 1200px) {
-            div#wrapper {
-                width: 1200px;
-                margin: auto;
-            }
-        }
-
-        footer {
-
-            clear: both;
-        }
-
-        footer h3 {
-
-        }
 
         p {
             color: #deb887;
@@ -161,106 +115,117 @@
         img, svg {
             height: 50px;
             width: 50px;
+            color: #deb887;
+
         }
 
         h1 {
             color: #deb887;
+            grid-column: 1/5;
+            font-size: 30px;
         }
 
-        table, border {
-            color: #deb887;
-            align-self: center;
-            text-align: center;
-            align-items: center;
-            display: flex;
+
+        form {
+            display: grid;
+            grid-template-columns: 30% 30% 20% 40%;
         }
+
+        h2 {
+
+            color: #deb887;
+
+
+        }
+
+        article {
+            text-align: justify;
+        }
+
+        @media all and (min-width: 1000px) {
+            section {
+                margin-right: auto;
+                margin-left: auto;
+
+            }
+        }
+
 
     </style>
 </head>
 <body>
 
-<header><a href=""><img id="logo" src="img/logo.svg"></a></header>
-<nav>
-
-    <li><a href="../index.html"><img src="img/keyboard.svg"></a></li>
-
-    <li><a href="about.html"><img src="img/info.png"></a></li>
-
-
-    <img src="img/user.svg">
-    <a href="Login.php"><p>Login</p></a>
-    <a href="Register.php"><p>Register</p></a>
-
-    </ul>
-
-</nav>
-<br>
-
-
-<a href="../TypeRacer/typeracer.html">
+<header>
     <table border="0">
         <tr>
-            <td><h1>CLICK HERE TO PLAY THE GAME</h1></td>
+            <td><a href="../index.html"><img id="logo" src="img/logo.svg"></a>
+
+
+                <li><a href="about.html"><img src="img/info_yellow.png"></a></li>
+                <li><a href="leaderboard"><img src="img/leaderboard_yellow.png"></a></li>
+            </td>
         </tr>
     </table>
-</a>
+    <br><br>
 
-<section id="nieuws">
-    <h3>What is Typeracer?</h3>
-    <p> So, you want to know what Typeracer, right? Well, Typeracer is a game that test how fast your typing skills are.
-        However, on our website, we have you write stings of code instead of words and/or phrases. The reasons why are
-        simple. First, we want to stand out from the crowd and not do what the others do. And second, we want to train
-        you into becoming a programmer yourself, because we think that being a software developer is the best occupation
-        for this current generation.
-    </p>
-</section>
-<section id="instrumenten">
+
+    <table border="1">
+        <tr>
+            <td><a href="Login.php">
+
+                <p>Login</p>
+
+            </a>
+
+
+                <a href="Register.php">
+
+                    <p>Register</p>
+
+                </a></td>
+        </tr>
+    </table>
+</header>
+
+
+<section>
+    <article>
+        <h3>What is Typeracer?</h3>
+        <p> So, you want to know what Typeracer is, right? Well, Typeracer is a game that test how fast your typing
+            skills
+            are.
+            However, on our website, we have you write strings of code instead of words and/or phrases. The reasons why
+            are
+            simple. First, we want to stand out from the crowd and not do what the others do. And second, we want to
+            train
+            you into becoming a programmer yourself, because we think that being a software developer is the best
+            occupation
+            for this current generation.
+        </p>
+    </article>
+
     <article>
         <h3>Types of code that you'll learn here.</h3>
 
         <p> As already mentioned, it isn't just our priority to make you a fast typer, but to also make you a good
-            coder. Here are some of the types of code you'll learn as an example. HTML, CSS, Javascript, SQL and PHP.
-            Javascript is all about the
-            interactivity of your website. For example, say you have two photos. You click on Photo one and a smiley
-            appears. However, if yo click right afterwards on photo two, the smiley will "teleport" from photo one photo
-            two.</p>
+            coder. There are plenty of types of code out there for you use and (hopefully not) abuse. However, we are
+            most focused on teaching you is the art of javascript. Why, well that's easy. The reason why we only
+            prioritize javascript over everything else is, because it is the first coding languish that we were taught
+            in school.</p>
     </article>
-    <article>
-        <h3>HTML</h3>
 
-        <p> HTML is the type of code that is used to build websites for example. It allows you to write articles, link
-            to other websites and put up images to make everything more lively.</p>
-    </article>
-    <article>
-        <h3>CSS</h3>
 
-        <p> CSS is the cosmetic part of your websites. It allows you dictate what color you website represents, what
-            type of font is used in the letters
-            that are seen on your website and how big those a for mentioned photos are.</p>
-    </article>
     <article>
         <h3>Javascript</h3>
 
-        <p> Javascript is all about the
+        <p> Now that you know why we prioritize javascript over everything else, let's give a quick explanation on what
+            it is. Javascript is all about the
             interactivity of your website. For example, say you have two photos. You click on Photo one and a smiley
-            appears. However, if yo click right afterwards on photo two, the smiley will "teleport" from photo one photo
+            appears. However, if you click right afterwards on photo two, the smiley will "teleport" from photo one
+            photo
             two.</p>
     </article>
-    <h3>SQL</h3>
-    <article>
-        <p> SQL is what is used to create databases and store information on it. This allows you, for example, to keep
-            track
-            of how many people have played your game and how many are currently playing, as well as check as to who you
-            have
-            banned from playing.</p>
-    </article>
-    <h3>PHP</h3>
-    <article>
-        <p> PHP is the hidden side of your website. On like the other types of code mentioned, PHP cannot be seen by the
-            user if they view the sourcecode of your website. It also prevents "lazy people" from completely copying you
-            and
-            pretending that they are the ones who did all the hard work.</p>
-    </article>
+
 </section>
 
 </body>

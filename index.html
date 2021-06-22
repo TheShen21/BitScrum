@@ -191,15 +191,6 @@
 
         }
 
-        .Login {
-            display: flex;
-            grid-column: 4/5;
-        }
-
-        .Register {
-            display: flex;
-            grid-column: 4/5;
-        }
 
         .knop {
             display: flex;
@@ -211,23 +202,41 @@
 
 <body>
 <form action="formtest.php" method="post">
-    <header><a href=""><img id="logo" src="img/logo.svg"></a></header>
+    <header>
+        <table border="0">
+            <tr><td><a href="index.html"><img id="logo" src="img/logo.svg"></a>
 
 
-    <li><a href="index.html"><img src="img/logo_yellow.png"></a></li>
+                <li><a href="front-end/about.html"><img src="img/info_yellow.png"></a></li>
+                <li><a href="leaderboard"><img src="img/leaderboard_yellow.png"></a> </li>
+            </td>
+            </tr>
+        </table>
 
-    <li><a href="front-end/about.html"><img src="img/info_yellow.png"></a></li>
-    <br><br>
-    <img src="img/user_yellow.png">
-    <div class="Login">
-        <a href="Login.php"><p>Login</p></a>
 
-    </div>
-    <div class="Register">
-        <a href="Register.php"><p>Register</p></a>
-    </div>
+
+        <table border="1"><tr><td><a href="Login.php">
+
+            <p>Login</p>
+
+        </a>
+
+
+            <a href="Register.php">
+
+                <p>Register</p>
+
+            </a></td> </tr></table></header>
+
+
     <div class="knop">
-        <a href="TypeRacer/typeracer.html"><table border="1"><tr><td><h2>CLICK HERE TO PLAY OUR GAME</h2></td></tr></table> </a>
+        <a href="TypeRacer/typeracer.html">
+            <table border="1">
+                <tr>
+                    <td><h2>CLICK HERE TO PLAY OUR GAME</h2></td>
+                </tr>
+            </table>
+        </a>
     </div>
 </form>
 </body>
