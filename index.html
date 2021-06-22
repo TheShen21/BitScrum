@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,7 @@
     <style>
         * {
             box-sizing: border-box;
-            margin: 10px;
-            align-self: center;
+
         }
 
         body {
@@ -63,20 +62,23 @@
 
         img#logo {
             width: 320px;
+            margin-left: 50px;
         }
 
         img {
             width: 100%;
-            color: #deb887;
+
 
         }
 
-        ul {
-            margin: 0px;
-            padding: 0px;
+        ul{
+            width: 100%;
+            border-top: 1px solid gold;
+            border-bottom: 1px solid gold;
         }
 
         li {
+            margin: 0 40px 0 40px;
             padding: 10px;
             padding-left: 20px;
 
@@ -179,10 +181,7 @@
         }
 
 
-        form {
-            display: grid;
-            grid-template-columns: 30% 30% 20% 40%;
-        }
+
 
         h2 {
 
@@ -190,54 +189,79 @@
 
 
         }
+        .user{
+
+           float: right;
+            margin-top: -6px ;
+        }
 
 
         .knop {
-            display: flex;
-            grid-column: 2/5;
+
+           text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+            font-weight: normal;
+            width: 40%;
+            background: #6ADE96;
+            tevertical-align: center;
+            border-radius: 300px;
+            margin: 50px auto 0 auto;
+            color: black;
+            padding: 20px 0 20px 0;
+            text-decoration: none;
+
+        }
+        .menu{
+
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: white;
+        }
+        a{
+            color: white;
+        }
+        .knop:hover{
+            box-shadow: 5px 10px 18px rgba(222,169,85,0.4);
+            color: gold;
+        }
+        .left-margin{
+            display: inline;
+            margin-left: 20px;
         }
 
     </style>
 </head>
 
 <body>
-<form action="formtest.php" method="post">
-    <header>
-        <table border="0">
-            <tr><td><a href="index.html"><img id="logo" src="img/logo.svg"></a>
+
+    <header><a href="front-end/about.html"><img id="logo" src="img/logo.svg"></a>
+        <div class="user">
+
+        </div>
+        </header>
+
+    <ul class="menu">
+        <li><a  href="../TypeRacer/typeracer.html"><img src="img/logo_yellow.png">Play Game</a></li>
+
+        <li><a href="front-end/about.html"><img src="img/info_yellow.png"><p class="left-margin">About</p></a></li>
+
+        <li><a href=""><img src="../img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
+
+        <li class="user"><a href="Register.php"><p class= "bottom-margin">Register</p></a></li>
+
+        <li class="user"><a href="Login.php"><p class= "bottom-margin">Login</p></a></li>
 
 
-                <li><a href="front-end/about.html"><img src="img/info_yellow.png"></a></li>
-                <li><a href="leaderboard"><img src="img/leaderboard_yellow.png"></a> </li>
-            </td>
-            </tr>
-        </table>
+    </ul>
+    <a href="TypeRacer/typeracer.html"><div class="knop">
+        CLICK HERE TO PLAY OUR GAME
+    </div></a>
 
 
-
-        <table border="1"><tr><td><a href="Login.php">
-
-            <p>Login</p>
-
-        </a>
-
-
-            <a href="Register.php">
-
-                <p>Register</p>
-
-            </a></td> </tr></table></header>
-
-
-    <div class="knop">
-        <a href="TypeRacer/typeracer.html">
-            <table border="1">
-                <tr>
-                    <td><h2>CLICK HERE TO PLAY OUR GAME</h2></td>
-                </tr>
-            </table>
-        </a>
-    </div>
-</form>
 </body>
 </html>
