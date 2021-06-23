@@ -12,31 +12,36 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Welcome</title>
+ 
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypeRacer</title>
     <link rel="icon" href="img/keyboard.svg">
     <link rel="stylesheet" href="styles.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <style>
-        * {
+          * {
             box-sizing: border-box;
 
         }
 
-        body {
+        
+        body{
             margin: 0;
-            padding: 0;
-            font-family: 'Raleway', sans-serif;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgb(34, 32, 32);
 
-
-            background-color: rgb(34, 32, 32);
         }
 
-        img#logo {
+       img#logo {
             width: 10vw;
             height: auto;
         }
@@ -248,14 +253,38 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         }
         #user-icon{
             margin-top: 10px;
-            margin-right: 50l
+            margin-right: 50;
+        }
+        #content{
+            margin: 0 auto 0 auto;
+            width: 50vw;
+            text-align: center;
+        }
+        .button {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ff6300;
+	padding: 20px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+    margin-bottom: 20px;
+}
+        .button:hover {
+            color: #ff6300;
+            background: black;
+            letter-spacing: 1px;
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.4s ease 0s;
         }
 
     </style>
 </head>
-
 <body>
-
     <header><a href="index.php"><img id="logo" src="img/logo.svg"></a>
         <div class="user">
 
@@ -263,12 +292,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </header>
 
     <ul class="menu">
-          <li><a  href="../TypeRacer/typeracer.html"><img src="img/logo_yellow.png">Play Game</a></li>
+    <li><a  href="../TypeRacer/typeracer.html"><img src="img/logo_yellow.png">Play Game</a></li>
 
         <li><a href="about.php"><img src="img/info_yellow.png"><p class="left-margin">About</p></a></li>
 
         <li><a href="leaderboard.php"><img src="img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
-
 
         <li class="user"><a href="settings.php"><img id="user-icon" src="img/user_yellow.png" alt=""></a></li>
 
@@ -276,10 +304,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
     </ul>
-    <a href="TypeRacer/typeracer.html"><div class="knop">
-        CLICK HERE TO PLAY OUR GAME
-    </div></a>
+<div id="content"><h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+<p>
+<div class="button_cont" text-align="center"><a class="button" href="reset-password.php" target="_blank" rel="nofollow noopener">Reset Your Password</a></div>
 
-
+    <div class="button_cont" text-align="center"><a class="button" href="../lib/backend/logout.php" target="_blank" rel="nofollow noopener">Sign Out of Your Account</a></div>
+</p></div>
 </body>
 </html>
+
+
+
