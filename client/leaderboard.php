@@ -10,7 +10,6 @@ $rank = 1;
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +17,31 @@ $rank = 1;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
-    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="stylesheet" href="styles/leaderboard.css">
 </head>
 <body>
+<!--menu-->
+<header><a href="front-end/about.html"><img id="logo" src="images/logo.svg"></a>
+        <div class="user">
+
+        </div>
+        </header>
+
+    <ul class="menu">
+        <li><a  href="../TypeRacer/typeracer.html"><img src="images/logo_yellow.png">Play Game</a></li>
+
+        <li><a href="front-end/about.html"><img src="images/info_yellow.png"><p class="left-margin">About</p></a></li>
+
+        <li><a href=""><img src="images/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
+
+        <li class="user"><a href="Register.php"><p class= "bottom-margin">Register</p></a></li>
+
+        <li class="user"><a href="Login.php"><p class= "bottom-margin">Login</p></a></li>
+        </ul>
+
+<!--leaderboard-->
 <table id="leaderboard">
-    <tr>
+    <tr id = "head">
         <th>Rank</th>
         <th>Username</th>
         <th>Cpm</th>
@@ -31,18 +50,25 @@ $rank = 1;
     <?php
     if (mysqli_num_rows($result)){
         while ($row = mysqli_fetch_assoc($result)){
+            if($rank === 1){
+            echo "<tr id='first_row'>
+                <td id='first'>{$rank}</td>
+                <td>{$row['username']}</td>
+                <td>{$row['cpm']}</td>
+            </tr>";
+            } else {
             echo "<tr>
-              <td>{$rank}</td>
-              <td>{$row['username']}</td>
-              <td>{$row['cpm']}</td>
-              </tr>";
-
+            <td>{$rank}</td>
+            <td>{$row['username']}</td>
+            <td>{$row['cpm']}</td>
+            </tr>";    
+            }
             $rank++;
         }
 
     }
-?>
-
+?> 
+              
 </table>
 
 </body>
