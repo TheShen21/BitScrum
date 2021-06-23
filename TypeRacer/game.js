@@ -8,15 +8,6 @@ function buttonColour() {
     document.getElementById("button3").addEventListener("click", function() {
         document.getElementById("button3").style.backgroundColor = "rgb(48, 48, 48)"
     })
-    document.getElementById("button4").addEventListener("click", function() {
-        document.getElementById("button4").style.backgroundColor = "rgb(48, 48, 48)"
-    })
-    document.getElementById("button5").addEventListener("click", function() {
-        document.getElementById("button5").style.backgroundColor = "rgb(48, 48, 48)"
-    })
-    document.getElementById("button6").addEventListener("click", function() {
-        document.getElementById("button6").style.backgroundColor = "rgb(48, 48, 48)"
-    })
 }
 
 function overlayOff() {
@@ -31,6 +22,7 @@ function overlaySettings() {
 
 var characters = 0;
 var finalScore = 0;
+var scoreMultiply = 0;
 var x;
 var test = 0;
 var msg = [ //this part needs to be connected to db 
@@ -70,7 +62,7 @@ function startTimer() {
         time--;
 
         if (time < 0) {
-            document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
+            document.getElementById('timer').innerHTML = "You typed at " + characters * scoreMultiply + " characters per minute!";
             document.getElementById("textInput").setAttribute("readonly", "");
             clearInterval(x);
             finalScore = characters;
@@ -84,6 +76,7 @@ function timer15() {
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
     time = 15;
+    scoreMultiply = 4;
 }
 
 function timer30() {
@@ -92,6 +85,7 @@ function timer30() {
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
     time = 30;
+    scoreMultiply = 2;
 }
 
 function timer60() {
@@ -100,4 +94,5 @@ function timer60() {
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
     time = 60;
+    scoreMultiply = 1;
 }
