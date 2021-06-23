@@ -1,18 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRacer</title>
+    <link rel="icon" href="img/keyboard.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
+
         }
 
         body {
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             font-family: 'Raleway', sans-serif;
-            background-color: rgb(255, 255, 255);
+
+
+            background-color: rgb(34, 32, 32);
+        }
+
+        img#logo {
+            width: 10vw;
+            height: auto;
+        }
+
+        .TypingGame {
+            color: #deb887;
+            background-color: transparent;
+            resize: none;
+            outline: none;
+            border: none;
+            font-family: 'Raleway', sans-serif;
+            font-size: 2vw;
+        }
+
+        ::placeholder {
+            color: burlywood;
+        }
+
+        #timer {
+            color: burlywood;
+            font-family: 'Raleway', sans-serif;
+            font-size: 4vw;
         }
 
         div#wrapper {
@@ -20,44 +53,54 @@
         }
 
         header {
-            background-color: rgb(192, 240, 233);
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            grid-column: 1/5;
+            font-family: 'Raleway', sans-serif;
+            color: burlywood;
         }
 
         img#logo {
             width: 320px;
+            margin-left: 50px;
         }
 
         img {
             width: 100%;
+
+
         }
 
-        ul {
-            margin: 0px;
-            padding: 0px;
+        ul{
+            width: 100%;
+            border-top: 1px solid gold;
+            border-bottom: 1px solid gold;
         }
 
         li {
-            background-color: rgb(128, 128, 128);
+            margin: 0 40px 0 40px;
             padding: 10px;
             padding-left: 20px;
-            border-top: 1px solid white;
+
+
         }
 
         li a {
-            color: white;
+
             text-decoration: none;
             font-weight: 700;
+            align-self: center;
         }
 
         @media all and (min-width: 550px) {
             ul {
-                background-color: rgb(128, 128, 128);
+
             }
 
             li {
                 display: inline-block;
                 border: none;
+
             }
         }
 
@@ -101,7 +144,7 @@
         }
 
         article:nth-child(even) {
-            margin-right: 0px;
+
         }
 
         @media all and (min-width: 1200px) {
@@ -112,83 +155,113 @@
         }
 
         footer {
-            background-color: rgb(128, 128, 128);
-            color: white;
+
             clear: both;
         }
 
         footer h3 {
+
+        }
+
+        p {
+            color: #deb887;
+        }
+
+        img, svg {
+            height: 50px;
+            width: 50px;
+            color: #deb887;
+
+        }
+
+        h1 {
+            color: #deb887;
+            grid-column: 1/5;
+            font-size: 30px;
+        }
+
+
+
+
+        h2 {
+
+            color: #deb887;
+
+
+        }
+        .user{
+
+           float: right;
+            margin-top: -6px ;
+        }
+
+
+        .knop {
+
+           text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+            font-weight: normal;
+            width: 40%;
+            background: #6ADE96;
+            tevertical-align: center;
+            border-radius: 300px;
+            margin: 50px auto 0 auto;
+            color: black;
+            padding: 20px 0 20px 0;
+            text-decoration: none;
+
+        }
+        .menu{
+
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+        }
+
+        a:visited{
             color: white;
         }
+        a{
+            color: white;
+        }
+        .knop:hover{
+            box-shadow: 5px 10px 18px rgba(222,169,85,0.4);
+            color: gold;
+        }
+        .left-margin{
+            display: inline;
+            margin-left: 20px;
+        }
+
     </style>
 </head>
+
 <body>
-<header>
-    <h1>welcome to our website</h1>
-</header>
-<nav>
-    <!--hoi-->
-    <ul>
-        <li><a href="#drums">Race</a></li>
-        <li><a href="#gitaar">Pit Stop</a></li>
-        <li><a href="#saxofoon">Chat</a></li>
-        <li><a href="#trompet">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+    <header><a href="front-end/about.html"><img id="logo" src="img/logo.svg"></a>
+        <div class="user">
+
+        </div>
+        </header>
+
+    <ul class="menu">
+        <li><a  href="../TypeRacer/typeracer.html"><img src="img/logo_yellow.png">Play Game</a></li>
+
+        <li><a href="front-end/about.html"><img src="img/info_yellow.png"><p class="left-margin">About</p></a></li>
+
+        <li><a href=""><img src="../img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
+
+        <li class="user"><a href="Register.php"><p class= "bottom-margin">Register</p></a></li>
+
+        <li class="user"><a href="Login.php"><p class= "bottom-margin">Login</p></a></li>
+
+
     </ul>
-</nav>
-<section id="nieuws">
-    <h3>What is Typeracer?</h3>
-    <p> So, you want to know what Typeracer, right? Well, Typeracer is a game that test how fast your typing skills are.
-        However, on our website, we have you write stings of code instead of words and/or phrases. The reasons why are
-        simple. First, we want to stand out from the crowd and not do what the others do. And second, we want to train
-        you into becoming a programmer yourself, because we think that being a software developer is the best occupation
-        for this current generation.
-    </p>
-</section>
-<section id="instrumenten">
-    <article>
-        <h3>Types of code that you'll learn here.</h3>
+    <a href="TypeRacer/typeracer.html"><div class="knop">
+        CLICK HERE TO PLAY OUR GAME
+    </div></a>
 
-        <p> As already mentioned, it isn't just our priority to make you a fast typer, but to also make you a good
-            coder. Here are some of the types of code you'll learn as an example. HTML, CSS, Javascript, SQL and PHP.
-            Javascript is all about the
-            interactivity of your website. For example, say you have two photos. You click on Photo one and a smiley
-            appears. However, if yo click right afterwards on photo two, the smiley will "teleport" from photo one photo
-            two.</p>
-    </article>
-    <article>
-        <h3>HTML</h3>
-
-        <p> HTML is the type of code that is used to build websites for example. It allows you to write articles, link
-            to other websites and put up images to make everything more lively.</p>
-    </article>
-    <article>
-        <h3>CSS</h3>
-
-        <p> CSS is the cosmetic part of your websites. It allows you dictate what color you website represents, what
-            type of font is used in the letters
-            that are seen on your website and how big those a for mentioned photos are.</p>
-    </article>
-    <article>
-        <h3>Javascript</h3>
-
-        <p> Javascript is all about the
-            interactivity of your website. For example, say you have two photos. You click on Photo one and a smiley
-            appears. However, if yo click right afterwards on photo two, the smiley will "teleport" from photo one photo
-            two.</p>
-    </article>
-    <h3>SQL</h3>
-
-    <p> SQL is what is used to create databases and store information on it. This allows you, for example, to keep track
-        of how many people have played your game and how many are currently playing, as well as check as to who you have
-        banned from playing.</p>
-    </article>
-    <h3>PHP</h3>
-
-    <p> PHP is the hidden side of your website. On like the other types of code mentioned, PHP cannot be seen by the
-        user if they view the sourcecode of your website. It also prevents "lazy people" from completely copying you and
-        pretanding that they are the ones who did all the hard work.</p>
-    </article>
-</section>
 
 </body>
+</html>
