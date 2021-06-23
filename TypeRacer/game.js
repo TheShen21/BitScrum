@@ -1,5 +1,30 @@
+function buttonColour() {
+    document.getElementById("button1").addEventListener("click", function() {
+        document.getElementById("button1").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+    document.getElementById("button2").addEventListener("click", function() {
+        document.getElementById("button2").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+    document.getElementById("button3").addEventListener("click", function() {
+        document.getElementById("button3").style.backgroundColor = "rgb(48, 48, 48)"
+    })
+}
+
+function overlayOff() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("textInput").focus();
+}
+
+function overlaySettings() {
+    document.getElementById("textInput").blur();
+    
+}
+
 var characters = 0;
 var finalScore = 0;
+var scoreMultiply = 0;
+var x;
+var test = 0;
 var msg = [ //this part needs to be connected to db 
     "<p>My first paragraph.</p>",
     "<h1>This is a heading</h1>",
@@ -23,11 +48,9 @@ function startTimer() {
     }
     running = true;
 
-    time = 3;
-
     const countdownTimer = document.getElementById('timer');
 
-    var x = setInterval(updateCountDown, 1000);
+    x = setInterval(updateCountDown, 1000);
 
     function updateCountDown() {
         const minutes = Math.floor(time / 60);
@@ -39,7 +62,7 @@ function startTimer() {
         time--;
 
         if (time < 0) {
-            document.getElementById('timer').innerHTML = "You typed at " + characters + " characters per minute!";
+            document.getElementById('timer').innerHTML = "You typed at " + characters * scoreMultiply + " characters per minute!";
             document.getElementById("textInput").setAttribute("readonly", "");
             clearInterval(x);
             finalScore = characters;
@@ -56,22 +79,28 @@ function startTimer() {
 }
 
 function timer15() {
-    time = 15;
+    clearInterval(x);
     document.getElementById("textInput").value = "";
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
+    time = 15;
+    scoreMultiply = 4;
 }
 
 function timer30() {
-    time = 30;
+    clearInterval(x);
     document.getElementById("textInput").value = "";
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
+    time = 30;
+    scoreMultiply = 2;
 }
 
 function timer60() {
-    time = 60;
+    clearInterval(x);
     document.getElementById("textInput").value = "";
     document.getElementById("textInput").focus();
     document.getElementById("textInput").removeAttribute("readonly", "");
+    time = 60;
+    scoreMultiply = 1;
 }
