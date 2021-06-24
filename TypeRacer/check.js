@@ -1,13 +1,3 @@
-function compareChars(x, y) {
-    return x === y;
-    // if (x === y) {
-    //     //nothing
-    // }
-    // else (
-    //     alert("not good")
-    // )
-}
-
 function checkInput(input, code) {
     //alert("there is input! cool");
     var index = input.length - 1;
@@ -18,6 +8,8 @@ function checkInput(input, code) {
     return compareChars(charX, charY);
 }
 
+
+
 function checkCharacters(textarea) {
     var input = textarea.value;
     //console.log(textarea.value)
@@ -27,14 +19,15 @@ function checkCharacters(textarea) {
         if(input.charAt(i) == selected_msg.charAt(i)) {
             //handle correct char
             amount_right = amount_right+1
-            console.log("CHAR "+i+" IS CORRECT")
+            console.log("CHAR "+ i +" IS CORRECT")
             colorGreen(i)
         }
         else {
             //handle wrong char
             amount_wrong = amount_wrong+1
-            console.log("CHAR "+i+" IS WRONG")
-            colorRed(i)            
+            console.log("CHAR "+ i +" IS WRONG")
+            colorRed(i)     
+            disable();
         }
     }
     return amount_right;
@@ -49,3 +42,24 @@ function colorRed(character) {
 }
 
 //checkCharacters("var x = 0", "var y != 3") string is working but other variables aren't
+
+function disable()
+{
+    document.onkeydown = function (e) 
+        {
+            if (e.keyCode==8) {
+                enable(); return true;
+            } 
+            
+            return false;
+        } 
+}
+//if key press backspace function enable
+
+function enable()
+{
+    document.onkeydown = function (e) 
+        {
+            return true;
+        }
+}

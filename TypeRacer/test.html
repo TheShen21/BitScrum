@@ -3,11 +3,7 @@
         <div id="game">
             <p id="timer" align="center"></p>
             <p align="center">
-                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" oncopy="var val = 0;
-                setInterval(() => {
-                    console.log(val++);    
-                    document.body.style.transform = `rotate(${val}deg)`;
-                }, 1);return false" readonly></textarea>
+                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" oncopy="var val = 0; setInterval(() => { console.log(val++); document.body.style.transform = `rotate(${val}deg)`; }, 1);return false" readonly></textarea>
                 <textarea rows="1" cols="75" id="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this), checkCharacters(this)" onpaste="return false" autofocus placeholder="Start typing here..."></textarea>
                 <div id="finalScore">hey</div>
             </p>
