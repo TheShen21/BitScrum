@@ -1,5 +1,5 @@
 <?php
-require_once "../lib/backend/connection.php";
+require_once "client/lib/backend/connection.php";
 
 $sql = "SELECT username, cpm FROM users ORDER BY cpm DESC";
 $result = $link->query($sql);
@@ -17,22 +17,22 @@ $rank = 1;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard</title>
-    <link rel="stylesheet" href="styles/leaderboard.css">
+    <link rel="stylesheet" href="leaderboard.css">
 </head>
 <body>
 <!--menu-->
-<header><a href="front-end/about.html"><img id="logo" src="images/logo.svg"></a>
+<header><a href="index.html"><img id="logo" src="client/img/logo.svg"></a>
         <div class="user">
 
         </div>
         </header>
 
     <ul class="menu">
-        <li><a  href="../TypeRacer/typeracer.html"><img src="images/logo_yellow.png">Play Game</a></li>
+        <li><a  href="../TypeRacer/typeracer.html"><img src="client/img/logo_yellow.png">Play Game</a></li>
 
-        <li><a href="front-end/about.html"><img src="images/info_yellow.png"><p class="left-margin">About</p></a></li>
+        <li><a href="about.html"><img src="client/img/info_yellow.png"><p class="left-margin">About</p></a></li>
 
-        <li><a href=""><img src="images/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
+        <li><a href="#"><img src="client/img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
 
         <li class="user"><a href="Register.php"><p class= "bottom-margin">Register</p></a></li>
 
@@ -47,7 +47,7 @@ $rank = 1;
         <th>Cpm</th>
 
     </tr>
-    <?php
+     <?php
     if (mysqli_num_rows($result)){
         while ($row = mysqli_fetch_assoc($result)){
             if($rank === 1){
@@ -68,7 +68,7 @@ $rank = 1;
 
     }
 ?> 
-              
+               
 </table>
 
 </body>
