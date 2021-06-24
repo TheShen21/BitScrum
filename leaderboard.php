@@ -1,5 +1,5 @@
 <?php
-require_once "client/lib/backend/connection.php";
+require_once "lib/backend/connection.php";
 
 $sql = "SELECT username, cpm FROM users ORDER BY cpm DESC";
 $result = $link->query($sql);
@@ -21,22 +21,22 @@ $rank = 1;
 </head>
 <body>
 <!--menu-->
-<header><a href="index.html"><img id="logo" src="client/img/logo.svg"></a>
+<header><a href="index.php"><img id="logo" src="client/img/logo.svg"></a>
         <div class="user">
 
         </div>
         </header>
 
     <ul class="menu">
-        <li><a  href="../TypeRacer/typeracer.html"><img src="client/img/logo_yellow.png">Play Game</a></li>
+        <li><a  href="TypeRacer/typeracer.html"><img src="client/img/logo_yellow.png">Play Game</a></li>
 
-        <li><a href="about.html"><img src="client/img/info_yellow.png"><p class="left-margin">About</p></a></li>
+        <li><a href="about.php"><img src="client/img/info_yellow.png"><p class="left-margin">About</p></a></li>
 
         <li><a href="#"><img src="client/img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
 
-        <li class="user"><a href="Register.php"><p class= "bottom-margin">Register</p></a></li>
+        <li class="user"><a href="client/register.php"><p class= "bottom-margin">Register</p></a></li>
 
-        <li class="user"><a href="Login.php"><p class= "bottom-margin">Login</p></a></li>
+        <li class="user"><a href="client/login.php"><p class= "bottom-margin">Login</p></a></li>
         </ul>
 
 <!--leaderboard-->

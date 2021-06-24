@@ -31,7 +31,7 @@ $rank = 1;
 </head>
 <body>
 <!--menu-->
-<header><a href="index.php"><img id="logo" src="img/logo.svg"></a>
+<header><a href="indexUser.php"><img id="logo" src="img/logo.svg"></a>
         <div class="user">
 
         </div>
@@ -40,7 +40,7 @@ $rank = 1;
     <ul class="menu">
         <li><a  href="../TypeRacer/typeracer.html"><img src="img/logo_yellow.png">Play Game</a></li>
 
-        <li><a href="about.php"><img src="img/info_yellow.png"><p class="left-margin">About</p></a></li>
+        <li><a href="aboutUser.php"><img src="img/info_yellow.png"><p class="left-margin">About</p></a></li>
 
         <li><a href="#"><img src="img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
 

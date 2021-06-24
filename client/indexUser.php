@@ -1,28 +1,28 @@
 <?php
-// Initialize the session
 session_start();
 
-// Check if the user is logged in, if not then redirect him to login page
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-
+    header("location: ../index.php");
     exit;
 }
 ?>
 
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>TypeRacer</title>
     <link rel="icon" href="img/keyboard.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
+
         }
 
         body {
@@ -66,20 +66,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            grid-column: 1/5;
             font-family: 'Raleway', sans-serif;
             color: burlywood;
         }
 
         img#logo {
-            margin-left: 50px;
             width: 320px;
+            margin-left: 50px;
         }
 
         img {
             width: 100%;
-        }
 
+
+        }
 
         ul{
             width: 100%;
@@ -110,6 +111,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             li {
                 display: inline-block;
                 border: none;
+
             }
         }
 
@@ -136,7 +138,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
         @media all and (min-width: 920px) {
             section#nieuws {
-                width: 70%;
+                width: 30%;
                 float: left;
             }
 
@@ -150,7 +152,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             display: inline-block;
             width: 45%;
             margin-right: 20px;
-            text-align:justify
         }
 
         article:nth-child(even) {
@@ -180,116 +181,103 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         img, svg {
             height: 50px;
             width: 50px;
+            color: #deb887;
+
         }
 
         h1 {
             color: #deb887;
+            grid-column: 1/5;
+            font-size: 30px;
         }
 
-        table, border {
+
+
+
+        h2 {
+
             color: #deb887;
-            align-self: center;
-            text-align: center;
-            align-items: center;
-            display: flex;
+
+
         }
         .user{
 
-            float: right;
+           float: right;
             margin-top: -6px ;
+        }
+
+
+        .knop {
+
+           text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+            font-weight: normal;
+            width: 40%;
+            background: #6ADE96;
+            tevertical-align: center;
+            border-radius: 300px;
+            margin: 50px auto 0 auto;
+            color: black;
+            padding: 20px 0 20px 0;
+            text-decoration: none;
+
         }
         .menu{
 
             font-size: 25px;
             color: white;
             text-decoration: none;
-
         }
+
         a:visited{
             color: white;
         }
         a{
             color: white;
         }
+        .knop:hover{
+            box-shadow: 5px 10px 18px rgba(222,169,85,0.4);
+            color: gold;
+        }
         .left-margin{
             display: inline;
             margin-left: 20px;
         }
-
-        #user-icon {
-    margin-top: 10px;
-    margin-right: 50px;
-}
-    
-}
-
-
-
+        #user-icon{
+            margin-top: 10px;
+            margin-right: 50l
+        }
 
     </style>
 </head>
+
 <body>
 
-<header><a href="index.php"><img id="logo" src="img/logo.svg"></a>
-    <div class="user">
+    <header><a href="indexUser.php"><img id="logo" src="img/logo.svg"></a>
+        <div class="user">
 
-    </div>
-</header>
-<ul class="menu">
-    <li><a  href="../TypeRacer/typeracer.html"><img src="img/logo_yellow.png">Play Game</a></li>
+        </div>
+        </header>
 
-    <li><a href="#"><img src="img/info_yellow.png"><p class="left-margin">About</p></a></li>
+    <ul class="menu">
+          <li><a  href="../TypeRacer/typeracer.html"><img src="img/logo_yellow.png">Play Game</a></li>
 
-    <li><a href="leaderboard.php"><img src="img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
-       
-    <li class="user"><a href="settings.php"><img id="user-icon" src="img/user_yellow.png" alt=""></a></li>
+        <li><a href="aboutUser.php"><img src="img/info_yellow.png"><p class="left-margin">About</p></a></li>
 
-    <li class="user"><p class="bottom-margin"><?php echo htmlspecialchars($_SESSION["username"]); ?></p></li>
-
-</ul>
+        <li><a href="leaderboardUser.php"><img src="img/leaderboard_yellow.png"><p class="left-margin">Leaderboard</p></a></li>
 
 
+        <li class="user"><a href="settings.php"><img id="user-icon" src="img/user_yellow.png" alt=""></a></li>
+
+        <li class="user"><p class="bottom-margin"><?php echo htmlspecialchars($_SESSION["username"]); ?></p></li>
 
 
-<section>
-    <article>
-        <h3>What is Typeracer?</h3>
-        <p> So, you want to know what Typeracer is, right? Well, Typeracer is a game that test how fast your typing
-            skills
-            are.
-            However, on our website, we have you write strings of code instead of words and/or phrases. The reasons why
-            are
-            simple. First, we want to stand out from the crowd and not do what the others do. And second, we want to
-            train
-            you into becoming a programmer yourself, because we think that being a software developer is the best
-            occupation
-            for this current generation.
-        </p>
-    </article>
+    </ul>
+    <a href="TypeRacer/typeracer.html"><div class="knop">
+        CLICK HERE TO PLAY OUR GAME
+    </div></a>
 
-    <article>
-        <h3>Types of code that you'll learn here.</h3>
-
-        <p> As already mentioned, it isn't just our priority to make you a fast typer, but to also make you a good
-            coder. There are plenty of types of code out there for you use and (hopefully not) abuse. However, we are
-            most focused on teaching you is the art of javascript. Why, well that's easy. The reason why we only
-            prioritize javascript over everything else is, because it is the first coding languish that we were taught
-            in school.</p>
-    </article>
-
-
-    <article>
-        <h3>Javascript</h3>
-
-        <p> Now that you know why we prioritize javascript over everything else, let's give a quick explanation on what
-            it is. Javascript is all about the
-            interactivity of your website. For example, say you have two photos. You click on Photo one and a smiley
-            appears. However, if you click right afterwards on photo two, the smiley will "teleport" from photo one
-            photo
-            two.</p>
-    </article>
-
-</section>
 
 </body>
 </html>
