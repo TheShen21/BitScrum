@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <script src="game.js"></script>
+    <script src="check.js"></script>
 </head>
 <body onload="randomText(); overlaySettings(); buttonColour()">
     <div id="overlay" onclick="overlayOff()">
@@ -26,8 +27,8 @@
         <div id="game">
             <p id="timer" align="center"></p>
             <p align="center">
-                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" readonly></textarea>
-                <textarea rows="1" cols="75" id="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this)" autofocus placeholder="Start typing here..."></textarea>
+                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" oncopy="return false" readonly></textarea>
+                <textarea rows="1" cols="75" id="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this), checkCharacters(this)" onpaste="return false" autofocus placeholder="Start typing here..."></textarea>
             </p>
         </div>
     </div>
