@@ -18,11 +18,13 @@ function checkInput(input, code) {
     return compareChars(charX, charY);
 }
 
-function checkCharacters(input, code) {
+function checkCharacters(textarea) {
+    var input = textarea.value;
+    //console.log(textarea.value)
     var amount_right = 0;
     var amount_wrong = 0;
     for(var i = 0; i < input.length; i ++) {
-        if(input.charAt(i) == code.charAt(i)) {
+        if(input.charAt(i) == selected_msg.charAt(i)) {
             //handle correct char
             amount_right = amount_right+1
             console.log("CHAR "+i+" IS CORRECT")
@@ -32,7 +34,7 @@ function checkCharacters(input, code) {
             //handle wrong char
             amount_wrong = amount_wrong+1
             console.log("CHAR "+i+" IS WRONG")
-            colorRed(i)
+            colorRed(i)            
         }
     }
     return amount_right;
@@ -47,6 +49,3 @@ function colorRed(character) {
 }
 
 //checkCharacters("var x = 0", "var y != 3") string is working but other variables aren't
-
-var input = document.getElementById("textInput");
-var code = selected_msg;
