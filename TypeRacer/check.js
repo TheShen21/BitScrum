@@ -35,7 +35,7 @@ function checkCharacters(input, code) {
             colorRed(i)
         }
     }
-    return amount_right
+    return amount_right;
 }
 
 function colorGreen(character) {
@@ -47,3 +47,6 @@ function colorRed(character) {
 }
 
 //checkCharacters("var x = 0", "var y != 3") string is working but other variables aren't
+
+var input = document.getElementById("textInput");
+var code = selected_msg;

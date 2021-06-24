@@ -26,7 +26,7 @@ function startTimer() {
     }
     running = true;
 
-    time = 3;
+    time = 10;
 
     const countdownTimer = document.getElementById('timer');
 
