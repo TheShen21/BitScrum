@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: rgb(34, 32, 32);
+}
+
+/*LEADERBORD */
+table#leaderboard {
+    border-collapse: collapse;
+    margin: 25px auto 0 auto;
+    width: 50vw;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+tr#head {
+    background-color: #dea955;
+    color: black;
+    font-weight: bold;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px 15px;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+
+}
+
+/*Add a lighter background to every second row(in this case the uneven rows) */
+tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: black;
+}
+
+/*Add border to the last row  */
+tr:last-of-type {
+    border-bottom: 2px solid #dea955;
+}
+
+td#first {
+    background-image: url('../img/crown.png');
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: 30px 0;
+    height: 25px;
+
+
+
+}
+
+
+
+/*MENU */
+img#logo {
+    width: 10vw;
+    height: auto;
+}
+
+.TypingGame {
+    color: #deb887;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+}
+
+::placeholder {
+    color: burlywood;
+}
+
+#timer {
+    color: burlywood;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+}
+
+div#wrapper {
+    background-color: rgb(250, 241, 234);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/5;
+    font-family: 'Raleway', sans-serif;
+    color: burlywood;
+}
+
+img#logo {
+    width: 320px;
+    margin-left: 50px;
+}
+
+img {
+    width: 100%;
+
+
+}
+
+ul {
+    width: 100%;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+}
+
+li {
+    margin: 0 40px 0 40px;
+    padding: 10px;
+    padding-left: 20px;
+
+
+}
+
+li a {
+
+    text-decoration: none;
+    font-weight: 700;
+    align-self: center;
+}
+
+@media all and (min-width: 550px) {
+    ul {}
+
+    li {
+        display: inline-block;
+        border: none;
+
+    }
+}
+
+h3 {
+    color: rgb(220, 106, 94);
+    font-weight: 600;
+}
+
+section,
+footer {
+    padding: 20px;
+}
+
+@media all and (min-width: 550px) {
+    section#nieuws {
+        width: 40%;
+        float: left;
+    }
+
+    section#instrumenten {
+        width: 60%;
+        float: right;
+    }
+}
+
+@media all and (min-width: 920px) {
+    section#nieuws {
+        width: 30%;
+        float: left;
+    }
+
+    section#instrumenten {
+        width: 70%;
+        float: right;
+    }
+}
+
+article {
+    display: inline-block;
+    width: 45%;
+    margin-right: 20px;
+}
+
+article:nth-child(even) {}
+
+@media all and (min-width: 1200px) {
+    div#wrapper {
+        width: 1200px;
+        margin: auto;
+    }
+}
+
+footer {
+
+    clear: both;
+}
+
+footer h3 {}
+
+p {
+    color: #deb887;
+}
+
+img,
+svg {
+    height: 50px;
+    width: 50px;
+    color: #deb887;
+
+}
+
+h1 {
+    color: #deb887;
+    grid-column: 1/5;
+    font-size: 30px;
+}
+
+
+
+
+h2 {
+
+    color: #deb887;
+
+
+}
+
+.user {
+
+    float: right;
+    margin-top: -6px;
+}
+
+
+
+.menu {
+
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.knop:hover {
+    box-shadow: 5px 10px 18px rgba(222, 169, 85, 0.4);
+    color: gold;
+}
+
+.left-margin {
+    display: inline;
+    margin-left: 20px;
+}
+
+
+#user-icon {
+    margin-top: 10px;
+    margin-right: 50px;
+
+}

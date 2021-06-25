@@ -30,7 +30,7 @@ var msg = [ //this part needs to be connected to db
     "<p>My first paragraph.</p>",
     "<h1>This is a heading</h1>",
     "<button>Click me</button>"
-];  
+];
 
 function randomText (){
     var random = Math.floor(Math.random() * 3);
@@ -68,6 +68,14 @@ function startTimer() {
             document.getElementById("textInput").setAttribute("readonly", "");
             clearInterval(x);
             finalScore = characters;
+
+            var data = new FormData();
+            data.append("score", finalScore);
+
+            fetch("leader_Update.php", {
+                method: "POST",
+                body: data
+            });
         }
     }
 }

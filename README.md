@@ -15,7 +15,6 @@ Team
 
 @ Paul van Breda - Developer 
 
-@ Daan Swart - Developer
 
   
   
@@ -54,12 +53,6 @@ Features:
 
 -A database that holds code for the user to type 
 
--Online multiplayer 
-
--Different typing modes (Single/Multi Language, Sudden Death) 
-
--User accounts with history of previous attempts 
-
 -Website customizations (font, colour, light/dark mode) 
 
 -An online leader-board 
@@ -68,7 +61,11 @@ Features:
 
 # Might do (might be in final product) 
 
+-Online multiplayer  
+
 -Achievements 
+
+-Different typing modes (Single/Multi Language, Sudden Death) 
 
 -User accounts with history of previous attempts 
 
