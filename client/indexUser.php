@@ -274,7 +274,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
     </ul>
-    <a href="TypeRacer/typeracer.html"><div class="knop">
+    <a href="../TypeRacer/typeracer.html"><div class="knop">
         CLICK HERE TO PLAY OUR GAME
     </div></a>
 
