@@ -1,10 +1,13 @@
 var characters = 0;
 var finalScore = 0;
 var msg = [ //this part needs to be connected to db 
-    "<p>My first paragraph.</p>",
-    "<h1>This is a heading</h1>",
-    "<button>Click me</button>"
-];
+    "function getElementKey(element: any, index: number): string { if (typeof element === 'object' && element !== null && element.key != null) {  return escape('' + element.key); }",
+    "let child; let nextName; let subtreeCount = 0; const nextNamePrefix = nameSoFar === '' ? SEPARATOR : nameSoFar + SUBSEPARATOR;",
+    "const iterator = iteratorFn.call(iterableChildren);let step; let ii = 0;",
+    "(mappedChild.key && (!child || child.key !== mappedChild.key)",
+    "function countChildren(children: ?ReactNodeList): number {let n = 0;mapChildren(children, () => {];",
+    "function toArray(children: ?ReactNodeList): Array<React$Node> {return mapChildren(children, child => child) || [];}"
+]
 
 var selected_msg ='';
 
