@@ -8,17 +8,15 @@
     <link rel="icon" href="img/keyboard.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <script src="check.js"></script>
-    <script src="game.js"></script>
 </head>
 <body onload="randomText(); overlaySettings(); buttonColour()">
-    <div id="overlay" onclick="overlayOff()">
+    <div id="overlay">
         <p id="overlayTitle">Welcome to TypeRacer</p>
         <br>
         <p id="overlayText">Please select a time option</p>
-        <button id="button1" class="setTimer" onclick="timer15(); randomText()">15 seconds</button>
-        <button id="button2" class="setTimer" onclick="timer30(); randomText()">30 seconds</button>
-        <button id="button3" class="setTimer" onclick="timer60(); randomText()">60 seconds</button>
+        <button id="button1" class="setTimer" onclick="timer15(); randomText(); overlayOff()">15 seconds</button>
+        <button id="button2" class="setTimer" onclick="timer30(); randomText(); overlayOff()">30 seconds</button>
+        <button id="button3" class="setTimer" onclick="timer60(); randomText(); overlayOff()">60 seconds</button>
     </div>
     <div id="parent">
         <div id="header">
@@ -27,10 +25,13 @@
         <div id="game">
             <p id="timer" align="center"></p>
             <p align="center">
-                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" readonly></textarea>
-                <textarea rows="1" cols="75" id="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this)" autofocus placeholder="Start typing here..."></textarea>
+                <textarea rows="5" cols="75" id="textPreview" maxlength="680" spellcheck="false" oncopy="return false" readonly></textarea>
+                <textarea rows="1" cols="75" id="textInput" spellcheck="false" onkeypress="startTimer()" onkeyup="countChar(this), checkCharacters(this)" onpaste="return false" autofocus placeholder="Start typing here..."></textarea>
+                <button id="refreshButton" onclick="window.location.reload()">Refresh</button>
             </p>
         </div>
     </div>
 </body>
+<script src="game.js"></script>
+<script src="check.js"></script>
 </html>

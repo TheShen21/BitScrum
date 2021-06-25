@@ -25,6 +25,7 @@ var finalScore = 0;
 var scoreMultiply = 0;
 var x;
 var test = 0;
+var selected_msg ='';
 var msg = [ //this part needs to be connected to db 
     "<p>My first paragraph.</p>",
     "<h1>This is a heading</h1>",
@@ -33,7 +34,8 @@ var msg = [ //this part needs to be connected to db
 
 function randomText (){
     var random = Math.floor(Math.random() * 3);
-    document.getElementById("textPreview").innerHTML = (msg[random]);   
+    selected_msg = (msg[random]);
+    document.getElementById("textPreview").innerHTML = selected_msg;   
 }   
 
 function countChar(inputText) {
